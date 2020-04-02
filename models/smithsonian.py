@@ -40,7 +40,7 @@ class SmithsonianModel(CNNModel):
                                              activation="linear",
                                              activity_regularizer=regularizers.l2(0.01),
                                              kernel_regularizer=regularizers.l2(0.05)))
-        self.model.add(tf.keras.layers.Dense(2,
+        self.model.add(tf.keras.layers.Dense(1,
                                              activation="softmax",
                                              activity_regularizer=regularizers.l2(0.01),
                                              kernel_regularizer=regularizers.l2(0.05)))

@@ -43,5 +43,5 @@ class CNNModel(ABC):
                                        decay=0.00001,
                                        amsgrad=False)
         self.model.compile(optimizer=opt,
-                           loss='sparse_categorical_crossentropy',
+                           loss='binary_crossentropy',
                            metrics=['accuracy'])
